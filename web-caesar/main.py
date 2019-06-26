@@ -48,4 +48,9 @@ app.run()
 
 @app.route("/")
 
-def encrypt():
+def encrypt(text, rot):
+    enc_message = rotate_string(text, rot)
+    return enc_message
+app.run()
+    
+
